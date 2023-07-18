@@ -19,6 +19,8 @@
         firstname VARCHAR(30) NOT NULL,
         lastname VARCHAR(30) NOT NULL,
         email VARCHAR(50) NOT NULL UNIQUE
+        gender VARCHAR(1)NOT NULLABLE,
+        date_of_birth column date type NOT NULLABLE,
     )';
 
     $result = $con->query($sql);
